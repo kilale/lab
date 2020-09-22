@@ -1,4 +1,4 @@
-name: MCDS_Windows
+name: CentosMachine
 version: 3  
 formatVersion: 1
 inputs: {}
@@ -6,8 +6,8 @@ resources:
   Cloud_vSphere_Machine_1:
     type: Cloud.vSphere.Machine
     properties:
-      image: ICDS-Windows2016
-      flavor: ICDS-Small
+      image: CentOS
+      flavor: small
       customizationSpec: Vrawin
       networks:
         - network: '${resource.Cloud_vSphere_Network_1.id}'
@@ -16,5 +16,5 @@ resources:
     type: Cloud.vSphere.Network
     properties:
       networkType: existing
-      name: vranew
-      networkCidr: 192.168.20.0/24
+      name: linux
+      networkCidr: 192.168.54.0/24

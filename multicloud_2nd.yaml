@@ -1,5 +1,6 @@
-name: multicloud_2nd
-version: 1
+name: multicloud2nd
+version: 3  
+formatVersion: 1
 inputs: {}
 resources:
   Cloud_Machine_1:
